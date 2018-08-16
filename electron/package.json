@@ -1,0 +1,23 @@
+{
+  "name": "jirate",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Task/time management using TimeWarrior and friends with browser extensions for JIRA.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ActionScripted/jirate.git"
+  },
+  "author": "Michael Thompson <actionscripted@gmail.com>",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/ActionScripted/jirate/issues"
+  },
+  "homepage": "https://github.com/ActionScripted/jirate#readme",
+  "devDependencies": {
+    "electron": "^2.0.7"
+  }
+}
