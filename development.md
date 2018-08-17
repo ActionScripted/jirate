@@ -4,6 +4,12 @@ Development
 
 Electron
 ---
+cd electron
+yarn (or npm install)
+yarn 
+
+for more commands check electron/package.json
+
 
 NativeMessaging
 ---
