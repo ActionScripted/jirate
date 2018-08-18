@@ -5,8 +5,8 @@ Development
 Electron
 ---
 cd electron
-yarn (or npm install)
-yarn 
+yarn
+yarn start
 
 for more commands check electron/package.json
 

@@ -1,4 +1,5 @@
 .DS_Store
 .eslintcache
+.tern-port
 node_modules
 out

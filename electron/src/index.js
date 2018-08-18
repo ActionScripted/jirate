@@ -2,13 +2,16 @@ import { app, BrowserWindow } from 'electron';
 import installExtension, { REACT_DEVELOPER_TOOLS } from 'electron-devtools-installer';
 import { enableLiveReload } from 'electron-compile';
 
-// Keep a global reference of the window object, if you don't, the window will
-// be closed automatically when the JavaScript object is garbage collected.
+import setup from './helpers/setup';
+
+
+// Store global window
 let mainWindow;
 
-const isDevMode = process.execPath.match(/[\\/]electron/);
 
+const isDevMode = process.execPath.match(/[\\/]electron/);
 if (isDevMode) enableLiveReload({ strategy: 'react-hmr' });
+
 
 const createWindow = async () => {
   // Create the browser window.
@@ -38,7 +41,10 @@ const createWindow = async () => {
 // This method will be called when Electron has finished
 // initialization and is ready to create browser windows.
 // Some APIs can only be used after this event occurs.
-app.on('ready', createWindow);
+app.on('ready', () => {
+  setup();
+  createWindow();
+});
 
 // Quit when all windows are closed.
 app.on('window-all-closed', () => {
