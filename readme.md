@@ -14,3 +14,8 @@ Setup
 Development
 ---
 See [development.md](development.md)
+
+
+Licesnse
+---
+[GPLv3](LICENSE)

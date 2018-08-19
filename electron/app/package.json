@@ -1,0 +1,18 @@
+{
+  "name": "jirate",
+  "productName": "Jirate",
+  "version": "0.0.1",
+  "description": "Task/time management using TimeWarrior and friends with browser extensions for JIRA.",
+  "main": "./main.prod.js",
+  "author": {
+    "name": "Michael Thompson",
+    "email": "actionscripted@gmail.com",
+    "url": "https://github.com/ActionScripted"
+  },
+  "scripts": {
+    "electron-rebuild": "node -r babel-register ../internals/scripts/ElectronRebuild.js",
+    "postinstall": "yarn electron-rebuild"
+  },
+  "license": "GPL-3.0",
+  "dependencies": {}
+}
