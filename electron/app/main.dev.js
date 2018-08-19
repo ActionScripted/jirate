@@ -13,7 +13,7 @@
 import { app, BrowserWindow } from 'electron';
 import MenuBuilder from './menu';
 
-import setup from './utils/setup';
+import setupNativeMessaging from './utils/setup';
 
 let mainWindow = null;
 
@@ -63,7 +63,7 @@ app.on('ready', async () => {
   }
 
   // TODO: document/rename
-  setup();
+  setupNativeMessaging();
 
   mainWindow = new BrowserWindow({
     show: false,

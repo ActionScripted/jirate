@@ -5,6 +5,8 @@ import routes from '../constants/routes.json';
 import styles from './Home.scss';
 
 const { spawn } = require('child_process');
+const shellPath = require('shell-path');
+const shellEnv = require('shell-env');
 
 type Props = {};
 type State = {
@@ -50,17 +52,31 @@ export default class Home extends Component<Props, State> {
   }
 
   componentDidMount() {
+    // TODO: move this shit
     // get task warrior stuff
     // update state
 
-    const tw = spawn('task', ['export']);
+    process.env.PATH =
+      shellPath.sync() ||
+      [
+        './node_modules/.bin',
+        '/.nodebrew/current/bin',
+        '/usr/local/bin',
+        process.env.PATH
+      ].join(':');
+
+    const tw = spawn('task', ['export'], { env: shellEnv.sync(), shell: true });
     let twLog = '';
 
     tw.stdout.on('data', data => {
+      console.log('Getting data...');
       twLog += data.toString();
+      console.log(twLog);
     });
 
     tw.stdout.on('close', () => {
+      console.log('Getting data...DONE');
+      console.log(twLog);
       this.setState({
         tasks: JSON.parse(twLog)
       });
@@ -73,11 +89,6 @@ export default class Home extends Component<Props, State> {
     tw.on('close', code => {
       console.log(`child process exited with code ${code}`);
     });
-
-    /*
-    setTimeout(() => {
-    }, 1000);
-    */
   }
 
   render() {
