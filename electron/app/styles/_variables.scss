@@ -1,1 +1,9 @@
-$c-red: #0f0;
+@import 'solarized';
+
+$base-bg: $solarized-c-base03;
+$base-fg: $solarized-c-base0;
+
+$link-bg: none;
+$link-fg: $solarized-c-blue;
+
+$c-red: $solarized-c-red;

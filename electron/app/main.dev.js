@@ -66,9 +66,10 @@ app.on('ready', async () => {
   setupNativeMessaging();
 
   mainWindow = new BrowserWindow({
+    height: 728,
     show: false,
-    width: 1024,
-    height: 728
+    titleBarStyle: 'hidden',
+    width: 1024
   });
 
   mainWindow.loadURL(`file://${__dirname}/app.html`);

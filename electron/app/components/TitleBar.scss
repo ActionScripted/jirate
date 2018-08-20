@@ -1,0 +1,9 @@
+@import '../styles/variables';
+
+.titlebar {
+  -webkit-app-region: drag;
+  -webkit-user-select: none;
+  background: $base-bg;
+  height: 2em;
+  width: 100%;
+}

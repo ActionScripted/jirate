@@ -1,0 +1,38 @@
+/**
+ * Include this file early in your Sass project to
+ * get access to Solarized colors and functions.
+ *
+ * Adapted from the outstanding work by Ethan Schoonover:
+ * http://ethanschoonover.com/solarized
+ *
+ * https://github.com/frebro/sass-solarized
+ *
+ * Jirate: renamed variables to namespace things a bit
+ */
+
+$solarized-c-base00: rgb(101, 123, 131);
+$solarized-c-base01: rgb(88, 110, 117);
+$solarized-c-base02: rgb(7, 54, 66);
+$solarized-c-base03: rgb(0, 43, 54);
+$solarized-c-base0: rgb(131, 148, 150);
+$solarized-c-base1: rgb(147, 161, 161);
+$solarized-c-base2: rgb(238, 232, 213);
+$solarized-c-base3: rgb(253, 246, 227);
+$solarized-c-blue: rgb(38, 139, 210);
+$solarized-c-cyan: rgb(42, 161, 152);
+$solarized-c-green: rgb(133, 153, 0);
+$solarized-c-magenta: rgb(211, 54, 130);
+$solarized-c-orange: rgb(203, 75, 22);
+$solarized-c-red: rgb(220, 50, 47);
+$solarized-c-violet: rgb(108, 113, 196);
+$solarized-c-yellow: rgb(181, 137, 0);
+
+@mixin solarized-dark() {
+  background-color: $base03;
+  color: $base0;
+}
+
+@mixin solarized-light() {
+  background-color: $base3;
+  color: $base00;
+}

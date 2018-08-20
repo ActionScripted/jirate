@@ -65,28 +65,30 @@ export default class Home extends Component<Props, State> {
         process.env.PATH
       ].join(':');
 
-    const tw = spawn('task', ['export'], { env: shellEnv.sync(), shell: true });
+    const tw = spawn('task', ['status:pending', 'export'], {
+      env: shellEnv.sync(),
+      shell: true
+    });
+
     let twLog = '';
 
     tw.stdout.on('data', data => {
-      console.log('Getting data...');
       twLog += data.toString();
-      console.log(twLog);
     });
 
     tw.stdout.on('close', () => {
-      console.log('Getting data...DONE');
-      console.log(twLog);
       this.setState({
         tasks: JSON.parse(twLog)
       });
     });
 
     tw.stderr.on('data', data => {
+      // TODO: handle stderr output
       console.log(`stderr: ${data}`);
     });
 
     tw.on('close', code => {
+      // TODO: handle spawn close
       console.log(`child process exited with code ${code}`);
     });
   }
