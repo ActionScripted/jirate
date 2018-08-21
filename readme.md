@@ -16,6 +16,6 @@ Development
 See [development.md](development.md)
 
 
-Licesnse
+License
 ---
 [GPLv3](LICENSE)
