@@ -1,13 +1,20 @@
 // @flow
-import React, { Component } from 'react';
+import * as React from 'react';
 import styles from './TitleBar.scss';
 
-type Props = {};
+type Props = {
+  children: React.Node
+};
 
-export default class TitleBar extends Component<Props> {
+export default class TitleBar extends React.Component<Props> {
   props: Props;
 
   render() {
-    return <div className={styles.titlebar} data-tid="titlebar" />;
+    const { children } = this.props;
+    return (
+      <div className={styles.titlebar} data-tid="titlebar">
+        {children}
+      </div>
+    );
   }
 }

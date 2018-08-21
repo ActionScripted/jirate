@@ -15,7 +15,7 @@ export default class Root extends Component<Props> {
     const { store, history } = this.props;
     return (
       <div className="rootWrapper">
-        <TitleBar />
+        <TitleBar>Jirate</TitleBar>
         <Provider store={store}>
           <ConnectedRouter history={history}>
             <Routes />

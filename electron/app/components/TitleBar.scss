@@ -4,6 +4,16 @@
   -webkit-app-region: drag;
   -webkit-user-select: none;
   background: $base-bg;
-  height: 2em;
+  border-bottom: 2px solid $base-border;
+  box-sizing: border-box;
+  font-size: 75%;
+  letter-spacing: 0.0625em;
+  line-height: 1;
+  overflow: hidden;
+  padding: 0.475em 1em 0.4em;
+  text-align: center;
+  text-overflow: ellipsis;
+  text-transform: uppercase;
+  white-space: nowrap;
   width: 100%;
 }
