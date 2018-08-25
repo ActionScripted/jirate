@@ -1,14 +1,6 @@
 @import '../styles/variables';
 
-.tasklist {
+.base {
   margin: 1em 0;
   padding: 0;
-
-  &__task {
-    padding: 0.25em 0.5em;
-
-    &:nth-child(odd) {
-      background: $task-odd-bg;
-    }
-  }
 }

@@ -59,6 +59,17 @@ export default {
    * Determine the array of extensions that should be used to resolve modules.
    */
   resolve: {
+    alias: {
+      '~': path.resolve(__dirname, 'app'),
+      Components: path.resolve(__dirname, 'app/components'),
+      Constants: path.resolve(__dirname, 'app/constants'),
+      Containers: path.resolve(__dirname, 'app/containers'),
+      Dist: path.resolve(__dirname, 'app/dist'),
+      Reducers: path.resolve(__dirname, 'app/reducers'),
+      Store: path.resolve(__dirname, 'app/store'),
+      Styles: path.resolve(__dirname, 'app/styles'),
+      Utils: path.resolve(__dirname, 'app/utils')
+    },
     extensions: ['.js', '.jsx', '.json'],
     modules: [path.join(__dirname, 'app'), 'node_modules']
   },

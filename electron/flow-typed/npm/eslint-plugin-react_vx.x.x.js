@@ -1,4 +1,4 @@
-// flow-typed signature: 22d9277d41d6005a0eb921af7f66742e
+// flow-typed signature: 3e14cb2f22b234be8fbf581655c44d1a
 // flow-typed version: <<STUB>>/eslint-plugin-react_v^7.10.0/flow_v0.77.0
 
 /**
@@ -350,6 +350,14 @@ declare module 'eslint-plugin-react/lib/util/getTokenBeforeClosingBracket' {
   declare module.exports: any;
 }
 
+declare module 'eslint-plugin-react/lib/util/jsx' {
+  declare module.exports: any;
+}
+
+declare module 'eslint-plugin-react/lib/util/log' {
+  declare module.exports: any;
+}
+
 declare module 'eslint-plugin-react/lib/util/makeNoMethodSetStateRule' {
   declare module.exports: any;
 }
@@ -359,6 +367,10 @@ declare module 'eslint-plugin-react/lib/util/pragma' {
 }
 
 declare module 'eslint-plugin-react/lib/util/props' {
+  declare module.exports: any;
+}
+
+declare module 'eslint-plugin-react/lib/util/propTypes' {
   declare module.exports: any;
 }
 
@@ -623,6 +635,12 @@ declare module 'eslint-plugin-react/lib/util/docsUrl.js' {
 declare module 'eslint-plugin-react/lib/util/getTokenBeforeClosingBracket.js' {
   declare module.exports: $Exports<'eslint-plugin-react/lib/util/getTokenBeforeClosingBracket'>;
 }
+declare module 'eslint-plugin-react/lib/util/jsx.js' {
+  declare module.exports: $Exports<'eslint-plugin-react/lib/util/jsx'>;
+}
+declare module 'eslint-plugin-react/lib/util/log.js' {
+  declare module.exports: $Exports<'eslint-plugin-react/lib/util/log'>;
+}
 declare module 'eslint-plugin-react/lib/util/makeNoMethodSetStateRule.js' {
   declare module.exports: $Exports<'eslint-plugin-react/lib/util/makeNoMethodSetStateRule'>;
 }
@@ -631,6 +649,9 @@ declare module 'eslint-plugin-react/lib/util/pragma.js' {
 }
 declare module 'eslint-plugin-react/lib/util/props.js' {
   declare module.exports: $Exports<'eslint-plugin-react/lib/util/props'>;
+}
+declare module 'eslint-plugin-react/lib/util/propTypes.js' {
+  declare module.exports: $Exports<'eslint-plugin-react/lib/util/propTypes'>;
 }
 declare module 'eslint-plugin-react/lib/util/variable.js' {
   declare module.exports: $Exports<'eslint-plugin-react/lib/util/variable'>;

@@ -1,4 +1,4 @@
-// flow-typed signature: 7fe2307da6aa43edd40ad24ae1e7b8f1
+// flow-typed signature: fb420a3658f356f8cbe638d73788c805
 // flow-typed version: <<STUB>>/eslint-plugin-jest_v^21.18.0/flow_v0.77.0
 
 /**
@@ -31,6 +31,10 @@ declare module 'eslint-plugin-jest/processors/snapshot-processor' {
 }
 
 declare module 'eslint-plugin-jest/rules/__tests__/consistent-test-it.test' {
+  declare module.exports: any;
+}
+
+declare module 'eslint-plugin-jest/rules/__tests__/expect-expect.test' {
   declare module.exports: any;
 }
 
@@ -70,11 +74,19 @@ declare module 'eslint-plugin-jest/rules/__tests__/no-test-prefixes.test' {
   declare module.exports: any;
 }
 
+declare module 'eslint-plugin-jest/rules/__tests__/no-test-return-statement.test' {
+  declare module.exports: any;
+}
+
 declare module 'eslint-plugin-jest/rules/__tests__/prefer-expect-assertions.test' {
   declare module.exports: any;
 }
 
 declare module 'eslint-plugin-jest/rules/__tests__/prefer-inline-snapshots.test' {
+  declare module.exports: any;
+}
+
+declare module 'eslint-plugin-jest/rules/__tests__/prefer-strict-equal.test' {
   declare module.exports: any;
 }
 
@@ -103,6 +115,10 @@ declare module 'eslint-plugin-jest/rules/__tests__/valid-expect.test' {
 }
 
 declare module 'eslint-plugin-jest/rules/consistent-test-it' {
+  declare module.exports: any;
+}
+
+declare module 'eslint-plugin-jest/rules/expect-expect' {
   declare module.exports: any;
 }
 
@@ -142,11 +158,19 @@ declare module 'eslint-plugin-jest/rules/no-test-prefixes' {
   declare module.exports: any;
 }
 
+declare module 'eslint-plugin-jest/rules/no-test-return-statement' {
+  declare module.exports: any;
+}
+
 declare module 'eslint-plugin-jest/rules/prefer-expect-assertions' {
   declare module.exports: any;
 }
 
 declare module 'eslint-plugin-jest/rules/prefer-inline-snapshots' {
+  declare module.exports: any;
+}
+
+declare module 'eslint-plugin-jest/rules/prefer-strict-equal' {
   declare module.exports: any;
 }
 
@@ -194,6 +218,9 @@ declare module 'eslint-plugin-jest/processors/snapshot-processor.js' {
 declare module 'eslint-plugin-jest/rules/__tests__/consistent-test-it.test.js' {
   declare module.exports: $Exports<'eslint-plugin-jest/rules/__tests__/consistent-test-it.test'>;
 }
+declare module 'eslint-plugin-jest/rules/__tests__/expect-expect.test.js' {
+  declare module.exports: $Exports<'eslint-plugin-jest/rules/__tests__/expect-expect.test'>;
+}
 declare module 'eslint-plugin-jest/rules/__tests__/lowercase-name.test.js' {
   declare module.exports: $Exports<'eslint-plugin-jest/rules/__tests__/lowercase-name.test'>;
 }
@@ -221,11 +248,17 @@ declare module 'eslint-plugin-jest/rules/__tests__/no-large-snapshots.test.js' {
 declare module 'eslint-plugin-jest/rules/__tests__/no-test-prefixes.test.js' {
   declare module.exports: $Exports<'eslint-plugin-jest/rules/__tests__/no-test-prefixes.test'>;
 }
+declare module 'eslint-plugin-jest/rules/__tests__/no-test-return-statement.test.js' {
+  declare module.exports: $Exports<'eslint-plugin-jest/rules/__tests__/no-test-return-statement.test'>;
+}
 declare module 'eslint-plugin-jest/rules/__tests__/prefer-expect-assertions.test.js' {
   declare module.exports: $Exports<'eslint-plugin-jest/rules/__tests__/prefer-expect-assertions.test'>;
 }
 declare module 'eslint-plugin-jest/rules/__tests__/prefer-inline-snapshots.test.js' {
   declare module.exports: $Exports<'eslint-plugin-jest/rules/__tests__/prefer-inline-snapshots.test'>;
+}
+declare module 'eslint-plugin-jest/rules/__tests__/prefer-strict-equal.test.js' {
+  declare module.exports: $Exports<'eslint-plugin-jest/rules/__tests__/prefer-strict-equal.test'>;
 }
 declare module 'eslint-plugin-jest/rules/__tests__/prefer-to-be-null.test.js' {
   declare module.exports: $Exports<'eslint-plugin-jest/rules/__tests__/prefer-to-be-null.test'>;
@@ -247,6 +280,9 @@ declare module 'eslint-plugin-jest/rules/__tests__/valid-expect.test.js' {
 }
 declare module 'eslint-plugin-jest/rules/consistent-test-it.js' {
   declare module.exports: $Exports<'eslint-plugin-jest/rules/consistent-test-it'>;
+}
+declare module 'eslint-plugin-jest/rules/expect-expect.js' {
+  declare module.exports: $Exports<'eslint-plugin-jest/rules/expect-expect'>;
 }
 declare module 'eslint-plugin-jest/rules/lowercase-name.js' {
   declare module.exports: $Exports<'eslint-plugin-jest/rules/lowercase-name'>;
@@ -275,11 +311,17 @@ declare module 'eslint-plugin-jest/rules/no-large-snapshots.js' {
 declare module 'eslint-plugin-jest/rules/no-test-prefixes.js' {
   declare module.exports: $Exports<'eslint-plugin-jest/rules/no-test-prefixes'>;
 }
+declare module 'eslint-plugin-jest/rules/no-test-return-statement.js' {
+  declare module.exports: $Exports<'eslint-plugin-jest/rules/no-test-return-statement'>;
+}
 declare module 'eslint-plugin-jest/rules/prefer-expect-assertions.js' {
   declare module.exports: $Exports<'eslint-plugin-jest/rules/prefer-expect-assertions'>;
 }
 declare module 'eslint-plugin-jest/rules/prefer-inline-snapshots.js' {
   declare module.exports: $Exports<'eslint-plugin-jest/rules/prefer-inline-snapshots'>;
+}
+declare module 'eslint-plugin-jest/rules/prefer-strict-equal.js' {
+  declare module.exports: $Exports<'eslint-plugin-jest/rules/prefer-strict-equal'>;
 }
 declare module 'eslint-plugin-jest/rules/prefer-to-be-null.js' {
   declare module.exports: $Exports<'eslint-plugin-jest/rules/prefer-to-be-null'>;

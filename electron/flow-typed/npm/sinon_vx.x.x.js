@@ -1,4 +1,4 @@
-// flow-typed signature: d57029acc07c86b3aa56f93adba1dbe2
+// flow-typed signature: 15825a0cc80054c9c67b93d7846935b5
 // flow-typed version: <<STUB>>/sinon_v^6.1.4/flow_v0.77.0
 
 /**
@@ -130,10 +130,6 @@ declare module 'sinon/lib/sinon/util/core/format' {
   declare module.exports: any;
 }
 
-declare module 'sinon/lib/sinon/util/core/function-name' {
-  declare module.exports: any;
-}
-
 declare module 'sinon/lib/sinon/util/core/function-to-string' {
   declare module.exports: any;
 }
@@ -191,10 +187,6 @@ declare module 'sinon/lib/sinon/util/core/typeOf' {
 }
 
 declare module 'sinon/lib/sinon/util/core/use-promise-library' {
-  declare module.exports: any;
-}
-
-declare module 'sinon/lib/sinon/util/core/value-to-string' {
   declare module.exports: any;
 }
 
@@ -304,9 +296,6 @@ declare module 'sinon/lib/sinon/util/core/extend.js' {
 declare module 'sinon/lib/sinon/util/core/format.js' {
   declare module.exports: $Exports<'sinon/lib/sinon/util/core/format'>;
 }
-declare module 'sinon/lib/sinon/util/core/function-name.js' {
-  declare module.exports: $Exports<'sinon/lib/sinon/util/core/function-name'>;
-}
 declare module 'sinon/lib/sinon/util/core/function-to-string.js' {
   declare module.exports: $Exports<'sinon/lib/sinon/util/core/function-to-string'>;
 }
@@ -351,9 +340,6 @@ declare module 'sinon/lib/sinon/util/core/typeOf.js' {
 }
 declare module 'sinon/lib/sinon/util/core/use-promise-library.js' {
   declare module.exports: $Exports<'sinon/lib/sinon/util/core/use-promise-library'>;
-}
-declare module 'sinon/lib/sinon/util/core/value-to-string.js' {
-  declare module.exports: $Exports<'sinon/lib/sinon/util/core/value-to-string'>;
 }
 declare module 'sinon/lib/sinon/util/core/walk.js' {
   declare module.exports: $Exports<'sinon/lib/sinon/util/core/walk'>;

@@ -1,0 +1,14 @@
+@import '../styles/variables';
+
+.base {
+  padding: 0.25em 0.5em;
+
+  &:nth-child(odd) {
+    background: $task-odd-bg;
+  }
+}
+
+.isActive {
+  color: $task-active-fg;
+  composes: base;
+}

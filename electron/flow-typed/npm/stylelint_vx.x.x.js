@@ -1,4 +1,4 @@
-// flow-typed signature: 5e9ddd9a968aa22b11df43b084b5d984
+// flow-typed signature: f85679e479ac59da5faeb59712f062b2
 // flow-typed version: <<STUB>>/stylelint_v^9.4.0/flow_v0.77.0
 
 /**
@@ -82,6 +82,10 @@ declare module 'stylelint/lib/formatters/stringFormatter' {
   declare module.exports: any;
 }
 
+declare module 'stylelint/lib/formatters/unixFormatter' {
+  declare module.exports: any;
+}
+
 declare module 'stylelint/lib/formatters/verboseFormatter' {
   declare module.exports: any;
 }
@@ -115,6 +119,10 @@ declare module 'stylelint/lib/normalizeRuleSettings' {
 }
 
 declare module 'stylelint/lib/postcssPlugin' {
+  declare module.exports: any;
+}
+
+declare module 'stylelint/lib/printConfig' {
   declare module.exports: any;
 }
 
@@ -974,6 +982,10 @@ declare module 'stylelint/lib/utils/getCacheFile' {
   declare module.exports: any;
 }
 
+declare module 'stylelint/lib/utils/getFormatterOptionsText' {
+  declare module.exports: any;
+}
+
 declare module 'stylelint/lib/utils/getModulePath' {
   declare module.exports: any;
 }
@@ -1284,6 +1296,9 @@ declare module 'stylelint/lib/formatters/needlessDisablesStringFormatter.js' {
 declare module 'stylelint/lib/formatters/stringFormatter.js' {
   declare module.exports: $Exports<'stylelint/lib/formatters/stringFormatter'>;
 }
+declare module 'stylelint/lib/formatters/unixFormatter.js' {
+  declare module.exports: $Exports<'stylelint/lib/formatters/unixFormatter'>;
+}
 declare module 'stylelint/lib/formatters/verboseFormatter.js' {
   declare module.exports: $Exports<'stylelint/lib/formatters/verboseFormatter'>;
 }
@@ -1310,6 +1325,9 @@ declare module 'stylelint/lib/normalizeRuleSettings.js' {
 }
 declare module 'stylelint/lib/postcssPlugin.js' {
   declare module.exports: $Exports<'stylelint/lib/postcssPlugin'>;
+}
+declare module 'stylelint/lib/printConfig.js' {
+  declare module.exports: $Exports<'stylelint/lib/printConfig'>;
 }
 declare module 'stylelint/lib/reference/keywordSets.js' {
   declare module.exports: $Exports<'stylelint/lib/reference/keywordSets'>;
@@ -1952,6 +1970,9 @@ declare module 'stylelint/lib/utils/functionArgumentsSearch.js' {
 }
 declare module 'stylelint/lib/utils/getCacheFile.js' {
   declare module.exports: $Exports<'stylelint/lib/utils/getCacheFile'>;
+}
+declare module 'stylelint/lib/utils/getFormatterOptionsText.js' {
+  declare module.exports: $Exports<'stylelint/lib/utils/getFormatterOptionsText'>;
 }
 declare module 'stylelint/lib/utils/getModulePath.js' {
   declare module.exports: $Exports<'stylelint/lib/utils/getModulePath'>;

@@ -1,3 +1,8 @@
+::selection {
+  background: $base-selection-bg;
+  color: $base-selection-fg;
+}
+
 html,
 body {
   background-color: $base-bg;

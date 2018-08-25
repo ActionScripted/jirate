@@ -1,10 +1,11 @@
 // @flow
 import React, { Component } from 'react';
 import styles from './TaskList.scss';
+import Task from './Task';
 
-const { spawn } = require('child_process');
-const shellPath = require('shell-path');
 const shellEnv = require('shell-env');
+const shellPath = require('shell-path');
+const { spawn } = require('child_process');
 
 type Props = {};
 type State = {
@@ -22,12 +23,10 @@ function TaskListPlaceholder() {
 function TaskList(props: TaskListProps) {
   const { tasks } = props;
   const taskList = tasks.map(task => (
-    <li className={styles.tasklist__task} key={task.id}>
-      {task.description}
-    </li>
+    <Task key={task.id} description={task.description} isActive />
   ));
 
-  return <ul className={styles.tasklist}>{taskList}</ul>;
+  return <ul className={styles.base}>{taskList}</ul>;
 }
 
 export default class Home extends Component<Props, State> {
