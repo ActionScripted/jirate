@@ -8,12 +8,14 @@
  * When running `yarn build` or `yarn build-main`, this file is compiled to
  * `./app/main.prod.js` using webpack. This gives us some performance wins.
  *
+ * NOTE: module aliases don't work here (why?) so don't use them
+ *
  * @flow
  */
 import { app, BrowserWindow } from 'electron';
-import MenuBuilder from '~/menu';
+import MenuBuilder from './menu';
 
-import setupNativeMessaging from 'Utils/setup';
+import setupNativeMessaging from './utils/setup';
 
 let mainWindow = null;
 
