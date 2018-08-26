@@ -172,6 +172,7 @@ export default merge.smart(baseConfig, {
   optimization: {
     minimizer: [
       new UglifyJSPlugin({
+        cache: true,
         parallel: true,
         sourceMap: true
       }),
