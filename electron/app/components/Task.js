@@ -1,7 +1,7 @@
 // @flow
 import React, { Component } from 'react';
 import classNames from 'classnames/bind';
-import styles from './Task.scss';
+import styles from 'Components/Task.scss';
 
 const cx = classNames.bind(styles);
 

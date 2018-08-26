@@ -13,11 +13,13 @@ function filterDepWithoutEntryPoints(dep: string): boolean {
   // Return true if we want to add a dependency to externals
   try {
     // If the root of the dependency has an index.js, return true
-    if (fs.existsSync(path.join(__dirname, `node_modules/${dep}/index.js`))) {
+    if (
+      fs.existsSync(path.resolve(__dirname, `node_modules/${dep}/index.js`))
+    ) {
       return false;
     }
     const pgkString = fs
-      .readFileSync(path.join(__dirname, `node_modules/${dep}/package.json`))
+      .readFileSync(path.resolve(__dirname, `node_modules/${dep}/package.json`))
       .toString();
     const pkg = JSON.parse(pgkString);
     const fields = ['main', 'module', 'jsnext:main', 'browser'];
@@ -50,13 +52,14 @@ export default {
   },
 
   output: {
-    path: path.join(__dirname, 'app'),
+    path: path.resolve(__dirname, 'app'),
     // https://github.com/webpack/webpack/issues/1114
     libraryTarget: 'commonjs2'
   },
 
   /**
    * Determine the array of extensions that should be used to resolve modules.
+   * NOTE: if you change aliases, please also update .flowconfig
    */
   resolve: {
     alias: {
@@ -71,7 +74,7 @@ export default {
       Utils: path.resolve(__dirname, 'app/utils')
     },
     extensions: ['.js', '.jsx', '.json'],
-    modules: [path.join(__dirname, 'app'), 'node_modules']
+    modules: [path.resolve(__dirname, 'app'), 'node_modules']
   },
 
   plugins: [

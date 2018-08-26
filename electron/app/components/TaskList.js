@@ -1,7 +1,7 @@
 // @flow
 import React, { Component } from 'react';
-import styles from './TaskList.scss';
-import Task from './Task';
+import styles from 'Components/TaskList.scss';
+import Task from 'Components/Task';
 
 const shellEnv = require('shell-env');
 const shellPath = require('shell-path');

@@ -2,8 +2,8 @@
 import React, { Component } from 'react';
 import { Provider } from 'react-redux';
 import { ConnectedRouter } from 'react-router-redux';
-import Routes from '../Routes';
-import TitleBar from '../components/TitleBar';
+import Routes from '~/Routes';
+import TitleBar from 'Components/TitleBar';
 
 type Props = {
   store: {},

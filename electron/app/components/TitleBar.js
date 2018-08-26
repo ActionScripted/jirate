@@ -1,6 +1,6 @@
 // @flow
 import * as React from 'react';
-import styles from './TitleBar.scss';
+import styles from 'Components/TitleBar.scss';
 
 type Props = {
   children: React.Node

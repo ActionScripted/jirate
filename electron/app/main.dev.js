@@ -11,9 +11,9 @@
  * @flow
  */
 import { app, BrowserWindow } from 'electron';
-import MenuBuilder from './menu';
+import MenuBuilder from '~/menu';
 
-import setupNativeMessaging from './utils/setup';
+import setupNativeMessaging from 'Utils/setup';
 
 let mainWindow = null;
 
