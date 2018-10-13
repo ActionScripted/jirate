@@ -1,5 +1,7 @@
 // @flow
 import React, { Component } from 'react';
+import posed, { PoseGroup } from 'react-pose';
+
 import styles from 'Components/TaskList.scss';
 import Task from 'Components/Task';
 
@@ -22,11 +24,24 @@ function TaskListPlaceholder() {
 
 function TaskList(props: TaskListProps) {
   const { tasks } = props;
-  const taskList = tasks.map(task => (
+  const TaskListPosed = posed.ul({
+    enter: {
+      delayChildren: 200,
+      staggerChildren: 50
+    },
+
+    exit: { x: '-100%', delay: 300 }
+  });
+
+  const TaskListItems = tasks.map(task => (
     <Task key={task.id} description={task.description} isActive />
   ));
 
-  return <ul className={styles.base}>{taskList}</ul>;
+  return (
+    <PoseGroup>
+      <TaskListPosed className={styles.base}>{TaskListItems}</TaskListPosed>
+    </PoseGroup>
+  );
 }
 
 export default class Home extends Component<Props, State> {
@@ -86,11 +101,6 @@ export default class Home extends Component<Props, State> {
 
   render() {
     const { tasks } = this.state;
-
-    if (tasks.length) {
-      return <TaskList tasks={tasks} />;
-    }
-
-    return <TaskListPlaceholder />;
+    return tasks.length ? <TaskList tasks={tasks} /> : <TaskListPlaceholder />;
   }
 }
