@@ -8,10 +8,14 @@
  * When running `yarn build` or `yarn build-main`, this file is compiled to
  * `./app/main.prod.js` using webpack. This gives us some performance wins.
  *
+ * NOTE: module aliases don't work here (why?) so don't use them
+ *
  * @flow
  */
 import { app, BrowserWindow } from 'electron';
 import MenuBuilder from './menu';
+
+import setupNativeMessaging from './utils/setup';
 
 let mainWindow = null;
 
@@ -60,10 +64,14 @@ app.on('ready', async () => {
     await installExtensions();
   }
 
+  // TODO: document/rename
+  setupNativeMessaging();
+
   mainWindow = new BrowserWindow({
+    height: 728,
     show: false,
-    width: 1024,
-    height: 728
+    titleBarStyle: 'hidden',
+    width: 1024
   });
 
   mainWindow.loadURL(`file://${__dirname}/app.html`);

@@ -14,5 +14,8 @@
     "postinstall": "yarn electron-rebuild"
   },
   "license": "GPL-3.0",
-  "dependencies": {}
+  "dependencies": {},
+  "devDependencies": {
+    "stylelint-scss": "^3.3.1"
+  }
 }
