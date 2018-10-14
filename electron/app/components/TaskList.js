@@ -24,13 +24,11 @@ function TaskListPlaceholder() {
 
 function TaskList(props: TaskListProps) {
   const { tasks } = props;
+
   const TaskListPosed = posed.ul({
     enter: {
-      delayChildren: 200,
-      staggerChildren: 50
-    },
-
-    exit: { x: '-100%', delay: 300 }
+      staggerChildren: 100
+    }
   });
 
   const TaskListItems = tasks.map(task => (
@@ -38,8 +36,10 @@ function TaskList(props: TaskListProps) {
   ));
 
   return (
-    <PoseGroup>
-      <TaskListPosed className={styles.base}>{TaskListItems}</TaskListPosed>
+    <PoseGroup animateOnMount>
+      <TaskListPosed key="tasklistposed" className={styles.base}>
+        {TaskListItems}
+      </TaskListPosed>
     </PoseGroup>
   );
 }

@@ -1,14 +1,8 @@
 {
   "files.associations": {
-    ".babelrc": "jsonc",
     ".eslintrc": "jsonc",
-    ".prettierrc": "jsonc",
-
-    ".stylelintrc": "json",
-
-    ".dockerignore": "ignore",
-    ".eslintignore": "ignore",
-    ".flowconfig": "ignore"
+    ".babelrc": "jsonc",
+    ".prettierrc": "jsonc"
   },
 
   "javascript.validate.enable": false,

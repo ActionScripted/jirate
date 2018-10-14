@@ -1,9 +1,9 @@
 // @flow
 import { combineReducers } from 'redux';
-import { connectRouter } from 'connected-react-router';
+import { routerReducer as router } from 'react-router-redux';
 
-export default function createRootReducer(history: {}) {
-  const routerReducer = connectRouter(history)(() => {});
+const rootReducer = combineReducers({
+  router
+});
 
-  return connectRouter(history)(combineReducers({ router: routerReducer }));
-}
+export default rootReducer;

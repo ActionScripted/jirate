@@ -34,11 +34,6 @@ module.exports = {
     'flowtype/use-flow-type': 'error',
     'flowtype/valid-syntax': 'error',
     'generator-star-spacing': 'off',
-    'import/extensions': [
-      'error',
-      'ignorePackages',
-      { js: 'never', jsx: 'never', json: 'never' }
-    ],
     'import/no-unresolved': 'error',
     'import/no-extraneous-dependencies': 'off',
     'jsx-a11y/anchor-is-valid': 'off',
@@ -69,7 +64,7 @@ module.exports = {
   settings: {
     'import/resolver': {
       webpack: {
-        config: path.resolve(__dirname, 'configs', 'webpack.config.eslint.js')
+        config: path.resolve(__dirname, 'webpack.config.eslint.js')
       }
     }
   }

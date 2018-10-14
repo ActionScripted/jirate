@@ -2,6 +2,11 @@
 
 For details, see [README.starter.md](README.starter.md)
 
+```
+yarn
+yarn dev
+```
+
 TODO: merge w/this readme
 
 ## Webliography
